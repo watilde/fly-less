@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/watilde/fly-less/issues"
   },
-  "homepage": "https://github.com/watilde/fly-less#readme"
+  "homepage": "https://github.com/watilde/fly-less#readme",
+  "dependencies": {
+    "less": "^2.5.1"
+  }
 }
