@@ -4,7 +4,7 @@
   "description": "Fly plugin for Less",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd test && fly"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/watilde/fly-less#readme",
   "dependencies": {
     "less": "^2.5.1"
+  },
+  "devDependencies": {
+    "fly": "0.0.3"
   }
 }
