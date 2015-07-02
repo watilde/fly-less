@@ -1,0 +1,24 @@
+{
+  "name": "fly-less",
+  "version": "0.0.1",
+  "description": "Fly plugin for Less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watilde/fly-less.git"
+  },
+  "keywords": [
+    "fly",
+    "flyplugin",
+    "less"
+  ],
+  "author": "Daijiro Wachi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watilde/fly-less/issues"
+  },
+  "homepage": "https://github.com/watilde/fly-less#readme"
+}
