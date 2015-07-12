@@ -4,7 +4,7 @@
   "description": "Fly plugin for Less",
   "main": "index.js",
   "scripts": {
-    "test": "cd test && fly"
+    "test": "cd test && npm i && fly"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,7 @@
   },
   "homepage": "https://github.com/watilde/fly-less#readme",
   "dependencies": {
-    "less": "^2.5.1"
-  },
-  "devDependencies": {
-    "fly": "0.0.3"
+    "less": "^2.5.1",
+    "object-assign": "^3.0.0"
   }
 }

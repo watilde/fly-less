@@ -1,6 +1,6 @@
-exports.default = function* () {
+module.exports.default = function* () {
   yield this
     .source("style.less")
-    .less({/* options */})
-    .target("style.css")
+    .less()
+    .target("./")
 }
