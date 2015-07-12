@@ -1,6 +1,6 @@
 {
   "name": "fly-less",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fly plugin for Less",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,12 @@
     "less"
   ],
   "author": "Daijiro Wachi",
+  "contributors": [
+    {
+      "name": "Jorge Bucaran",
+      "email": "jbucaran@me.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watilde/fly-less/issues"

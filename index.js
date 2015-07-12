@@ -1,22 +1,9 @@
-var assign = require("object-assign")
-var less = require("less")
-var options = {}
+const less = require("less")
+const assign = require("object-assign")
 
 module.exports = function () {
-  return this.filter("less", (str, opts) => {
-    options = assign({}, {
-      compress: false,
-      paths: []
-    }, opts)
-
-    return this.defer(compile)(str)
+  this.filter("less", (source, options) => {
+    return this.defer(less.render.bind(less))(source, options)
+      .then((result) => result.css.toString())
   }, { ext: ".css" })
-}
-
-function compile (str, cb) {
-  less.render(str, options).then(function (out) {
-    cb(null, out.css)
-  }).catch(function (e){
-    cb(e)
-  })
 }
