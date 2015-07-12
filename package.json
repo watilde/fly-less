@@ -4,7 +4,7 @@
   "description": "Fly plugin for Less",
   "main": "index.js",
   "scripts": {
-    "test": "cd test && npm i && fly"
+    "test": "fly && node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
   "dependencies": {
     "less": "^2.5.1",
     "object-assign": "^3.0.0"
+  },
+  "devDependencies": {
+    "fly": "^0.2.2",
+    "fly-less": "./"
   }
 }

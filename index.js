@@ -10,13 +10,13 @@ module.exports = function () {
     }, opts)
 
     return this.defer(compile)(str)
-  })
+  }, { ext: ".css" })
 }
 
 function compile (str, cb) {
   less.render(str, options).then(function (out) {
-    cb.resolve(null, out.css)
+    cb(null, out.css)
   }).catch(function (e){
-    cb.resolve(e)
+    cb(e)
   })
 }

@@ -1,6 +1,6 @@
 module.exports.default = function* () {
   yield this
-    .source("style.less")
+    .source("test/style.less")
     .less()
-    .target("./")
+    .target("test/")
 }
