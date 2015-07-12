@@ -24,9 +24,9 @@ npm install -D fly-less
 ### Example
 
 ```js
-export function* text () {
+module.exports.default = function* () {
   yield this
-    .source("./src/less/**/*.less")
+    .source("src/**/*.less")
     .less()
     .target("dist/")
 }
