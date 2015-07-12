@@ -16,6 +16,12 @@
     "less"
   ],
   "author": "Daijiro Wachi",
+  "contributors": [
+    {
+      "name": "Jorge Bucaran",
+      "email": "jbucaran@me.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watilde/fly-less/issues"
