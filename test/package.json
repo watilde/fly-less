@@ -1,7 +1,11 @@
 {
   "name": "fly-less-test",
+  "scripts": {
+    "test": "fly"
+  },
   "devDependencies": {
     "fly": "^0.2.2",
     "fly-less": "../"
-  }
+  },
+  "private": true
 }

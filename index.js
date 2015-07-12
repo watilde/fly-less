@@ -1,15 +1,22 @@
+var assign = require("object-assign")
+var less = require("less")
+var options = {}
+
 module.exports = function () {
-  this.less = function (options) {
-    return this
-      .filter((data) => {
-        try {
-          return require("less").render(data, options)
-        } catch (e) {
-          this.notify("plugin_error", {
-            plugin: "less",
-            error: e
-          })
-        }
-      }).notify("plugin_run", { plugin: "less" })
-  }
+  return this.filter("less", (str, opts) => {
+    options = assign({}, {
+      compress: false,
+      paths: []
+    }, opts)
+
+    return this.defer(compile)(str)
+  })
+}
+
+function compile (str, cb) {
+  less.render(str, options).then(function (out) {
+    cb.resolve(null, out.css)
+  }).catch(function (e){
+    cb.resolve(e)
+  })
 }
