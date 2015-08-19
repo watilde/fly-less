@@ -28,11 +28,8 @@
   },
   "homepage": "https://github.com/watilde/fly-less#readme",
   "dependencies": {
+    "fly": "^0.2.2",
     "less": "^2.5.1",
     "object-assign": "^3.0.0"
-  },
-  "devDependencies": {
-    "fly": "^0.4.2",
-    "fly-less": "./"
   }
 }

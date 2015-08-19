@@ -4,5 +4,5 @@ module.exports.default = function* () {
     .less({
       paths: "test"
     })
-    .target("test/")
+    .target("test")
 }
