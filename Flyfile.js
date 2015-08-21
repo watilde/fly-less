@@ -1,8 +1,8 @@
-module.exports.default = function* () {
+export default function* () {
   yield this
     .source("test/style.less")
     .less({
       paths: "test"
     })
-    .target("test/")
+    .target("test")
 }
