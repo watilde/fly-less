@@ -1,6 +1,6 @@
 {
   "name": "fly-less",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Fly plugin for Less",
   "main": "index.js",
   "scripts": {
